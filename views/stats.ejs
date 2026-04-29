@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="header">
@@ -20,24 +21,24 @@
         <p>Estatísticas de acesso</p>
       </div>
       <div class="stats">
-            <p>
-             <b> <%= process.env.DOMAIN %><%= code %> </b>
-            </p>
-         <p>
+        <p>
+          <b><%= process.env.DOMAIN %><%= code %></b>
+        </p>
+        <p>
           Redireciona para:<br />
           <%= url %>
-            </p>
-            <div class="statsRow">
+        </p>
+        <div class="statsRow">
           <div class="statsBox">
-            <b> <%= hits $ %> </b>
+            <b><%= hits %></b>
             <p>Visitas</p>
           </div>
           <div class="statsBox">
-            <b> <%= updateAt %> </b>
+            <b><%= updatedAt %></b>
             <p>Última Visita</p>
           </div>
         </div>
-        <a href="/" class="btn btn-primary">Encurtat nova URL</a>
+        <a href="/" class="btn btn-primary">Encurtar nova URL</a>
       </div>
     </div>
     <script

@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const database = require('../db');
 
-const Link = database.define('Link', {
+const Link = database.define('link', {
     id: {
         type: Sequelize.INTEGER.UNSIGNED,
         autoIncrement: true,
@@ -23,4 +23,4 @@ const Link = database.define('Link', {
     }
 })
 
-module.exports = Link
+module.exports = Link;
